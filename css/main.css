@@ -27,15 +27,6 @@ header {
     box-shadow:         0px 1px 4px 0px rgba(50, 50, 50, 0.75);
 }
 
-#headWrapper {
-    width: 100%;
-    height: auto;
-    max-width: 1100px;
-    margin: 0 auto 0 auto;
-    position: relative;
-    min-width: 1000px;
-}
-
 #loginBox {
     position: absolute;
     right: 10px;
@@ -43,7 +34,7 @@ header {
 }
 
 #logo {
-    padding: 4px 0 0 0;
+    padding: 4px 0 0 30px;
 }
 
 .login {
@@ -103,15 +94,11 @@ nav {
 
 /* Main wrapper */
 #wrapper {
-    overflow: hidden;
-    width: 1000px;
+    width: 100%;
     margin: 0 auto 0 auto;
     background-color: white;
-}
-
-#inner {
-    -webkit-box-shadow: 0px -1px 11px 0px rgba(50, 50, 50, 0.75);
+        -webkit-box-shadow: 0px -1px 11px 0px rgba(50, 50, 50, 0.75);
     -moz-box-shadow:    0px -1px 11px 0px rgba(50, 50, 50, 0.75);
     box-shadow:         0px -1px 11px 0px rgba(50, 50, 50, 0.75);
-    height: 86.5524%;
+    height: 100%;
 }
