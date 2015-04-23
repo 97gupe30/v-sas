@@ -14,7 +14,7 @@ html {
 body {
     height: 100%;
     min-height: 100%;
-    background-color: #EEEEEE;
+    background-color: whitesmoke;
 }
 
 /* HEADER */
@@ -27,14 +27,20 @@ header {
     box-shadow:         0px 1px 4px 0px rgba(50, 50, 50, 0.75);
 }
 
+#headwrapper {
+    width: 1140px;
+    margin: 0 auto 0 auto;
+    position: relative;
+}
+
 #loginBox {
     position: absolute;
-    right: 10px;
+    right: 0;
     top: 50px;
 }
 
 #logo {
-    padding: 4px 0 0 30px;
+    padding: 4px 0 0 0px;
 }
 
 .login {
@@ -59,46 +65,71 @@ nav {
     background: -ms-linear-gradient(left, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 100%);
     background: linear-gradient(to right, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', endColorstr='#207ce5', GradientType=1 );
-    -webkit-box-shadow: inset 0px 0px 21px 0px rgba(50, 50, 50, 0.75);
-    -moz-box-shadow:    inset 0px 0px 21px 0px rgba(50, 50, 50, 0.75);
-    box-shadow:         inset 0px 0px 21px 0px rgba(50, 50, 50, 0.75);
 }
 
-/* SLIDESHOW */
-#slides {
-    display:none;
+#menu {
+    height: 40px;
+    width: 1140px;
+    margin: 0 auto 0 auto;
+    background: url('../images/border.png') left top no-repeat;
 }
 
-.left-arrow {
-    position: absolute;
-    top: 190px;
-    z-index: 40;
+#menu ul {
+    list-style: none;
+    padding-top: 11px;
 }
 
-.right-arrow {
-    position: absolute;
-    top: 190px;
-    z-index: 40;
-    right: 0;
+#menu ul li {
+    display: table;
+    float: left;
 }
 
-.container {
-    position: relative;
+#menu ul li a {
+    padding: 12px 16px 13px 15px;
+    background: url('../images/border.png') right top no-repeat;
+    transition: 0.3s ease;
+    color: white;
+    text-decoration: none;
+    margin-right: -1px;
 }
 
-#slides {
-    -webkit-box-shadow: inset 0px 0px 21px 0px rgba(50, 50, 50, 0.75);
-    -moz-box-shadow:    inset 0px 0px 21px 0px rgba(50, 50, 50, 0.75);
-    box-shadow:         inset 0px 0px 21px 0px rgba(50, 50, 50, 0.75);
+#menu ul li a:hover {
+    -webkit-box-shadow: inset 0px 0px 8px 0px rgba(50, 50, 50, 1);
+    -moz-box-shadow:    inset 0px 0px 8px 0px rgba(50, 50, 50, 1);
+    box-shadow:         inset 0px 0px 8px 0px rgba(50, 50, 50, 1);
+}
+
+.home-icon {
+    color: white;
+    text-shadow: 0px 1px 0px #111;
+    font-size: 15px;
+
 }
 
 /* Main wrapper */
+
+#splashScreen  {
+    -webkit-box-shadow: inset 0px 0px 30px 0px rgba(50, 50, 50, 1);
+    -moz-box-shadow:    inset 0px 0px 30px 0px rgba(50, 50, 50, 1);
+    box-shadow:         inset 0px 0px 30px 0px rgba(50, 50, 50, 1);
+    background-image: url('../images/front-pic.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 1140px;
+    height:400px;
+}
+
 #wrapper {
-    width: 100%;
+    overflow: hidden;
+}
+
+#innerWrapper {
+    width: 1140px;
     margin: 0 auto 0 auto;
     background-color: white;
-        -webkit-box-shadow: 0px -1px 11px 0px rgba(50, 50, 50, 0.75);
-    -moz-box-shadow:    0px -1px 11px 0px rgba(50, 50, 50, 0.75);
-    box-shadow:         0px -1px 11px 0px rgba(50, 50, 50, 0.75);
+    -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,0.4);
+    -moz-box-shadow: 0px 0px 10px rgba(0,0,0,0.4);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);	
     height: 100%;
+    position: relative;
 }
