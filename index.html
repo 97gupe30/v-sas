@@ -12,47 +12,7 @@
         <script src="scripts/jquery.slides.js"></script>
         <link rel="stylesheet" type="text/css" href="css/main.css"/>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script>
-            $(function() {
-                $('#slides').slidesjs({
-                    width: 1000,
-                    height: 300,
-                    effect: {
-                        slide: {
-                            // Slide effect settings.
-                            speed: 1000
-                            // [number] Speed in milliseconds of the slide animation.
-                        }
-                    },
-                    play: {
-                        active: false,
-                        // [boolean] Generate the play and stop buttons.
-                        // You cannot use your own buttons. Sorry.
-                        effect: "slide",
-                        // [string] Can be either "slide" or "fade".
-                        interval: 10000,
-                        // [number] Time spent on each slide in milliseconds.
-                        auto: true,
-                        // [boolean] Start playing the slideshow on load.
-                        swap: true,
-                        // [boolean] show/hide stop and play buttons
-                        pauseOnHover: true
-                        // [boolean] pause a playing slideshow on hover
-                    },
-                    pagination: {
-                        active: false
-                    },
-                    navigation: {
-                        active: false
-                        // [boolean] Generates next and previous buttons.
-                        // You can set to false and use your own buttons.
-                        // User defined buttons must have the following:
-                        // previous button: class="slidesjs-previous slidesjs-navigation"
-                        // next button: class="slidesjs-next slidesjs-navigation"
-                    }
-                });
-            });
-        </script>
+        <meta charset="utf-8">
     </head>
     <body>
         <header>
@@ -63,12 +23,12 @@
                     </div>
                 </a>
                 <div id="loginBox">
-                    <form class="form-inline">
+                    <form class="form-inline" method="POST" action="scripts/login.php">
                         <div class="form-group">
-                            <input type="text" class="form-control" id="exampleInputEmail3" placeholder="Callsign">
+                            <input type="text" class="form-control" placeholder="Callsign" name="callsign">
                         </div>
                         <div class="form-group">
-                            <input type="password" class="form-control" id="exampleInputPassword3" placeholder="Password">
+                            <input type="password" class="form-control" placeholder="Password" name="password">
                         </div>
                         <button type="submit" class="btn btn-default">Sign in</button>
                     </form>
